@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Jesuscam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-wA-F8O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knw-fQ-MIN">
+                                <rect key="frame" x="157" y="526" width="61" height="61"/>
+                                <state key="normal" image="cam-button"/>
+                                <connections>
+                                    <action selector="takePhotoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjX-bf-GzW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jesus-1000h" translatesAutoresizingMaskIntoConstraints="NO" id="EPu-CT-amG">
+                                <rect key="frame" x="94" y="166.5" width="187.5" height="333.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ET1-wA-F8O" secondAttribute="trailing" id="0v9-TV-yX1"/>
+                            <constraint firstItem="ET1-wA-F8O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Asd-kI-WH8"/>
+                            <constraint firstItem="EPu-CT-amG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IwZ-9I-sgU"/>
+                            <constraint firstItem="EPu-CT-amG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="LID-G7-hCQ"/>
+                            <constraint firstItem="EPu-CT-amG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="NMy-db-GCy"/>
+                            <constraint firstItem="ET1-wA-F8O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O1R-uj-42R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Knw-fQ-MIN" secondAttribute="bottom" constant="80" id="adL-s6-p5d"/>
+                            <constraint firstItem="Knw-fQ-MIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czp-lW-RgU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ET1-wA-F8O" secondAttribute="bottom" id="w2Z-R0-C9N"/>
+                            <constraint firstItem="EPu-CT-amG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z5c-rU-xD5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="ET1-wA-F8O" id="gQS-R5-j6X"/>
+                        <outlet property="takePhotoButton" destination="Knw-fQ-MIN" id="7lE-kD-eRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cam-button" width="61" height="61"/>
+        <image name="jesus-1000h" width="707" height="1000"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Jesuscam {
+  umbrella header "Pods-Jesuscam-umbrella.h"
+
+  export *
+  module * { export * }
+}

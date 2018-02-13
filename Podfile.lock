@@ -1,0 +1,23 @@
+PODS:
+  - FastttCamera (0.3.19):
+    - FastttCamera/Default (= 0.3.19)
+  - FastttCamera/Default (0.3.19)
+
+DEPENDENCIES:
+  - FastttCamera (from `https://github.com/xaphod/FastttCamera.git`)
+
+EXTERNAL SOURCES:
+  FastttCamera:
+    :git: https://github.com/xaphod/FastttCamera.git
+
+CHECKOUT OPTIONS:
+  FastttCamera:
+    :commit: 47f0c769f181cd95e614621651549266b7b8589f
+    :git: https://github.com/xaphod/FastttCamera.git
+
+SPEC CHECKSUMS:
+  FastttCamera: 4ea9b5374b50f30f7693a715afe0835738e34149
+
+PODFILE CHECKSUM: e316916eb4856bc615dac3f479041b8f90b820c4
+
+COCOAPODS: 1.3.1

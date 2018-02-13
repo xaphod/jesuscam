@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00843E21C283A2894A65B8F06FAE4230 /* FastttCapturedImage+Process.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FEA0C31171C36A38B9B9E3043D4DB14 /* FastttCapturedImage+Process.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0346B0F4ECF128AD63B645231F3F5004 /* FastttZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C21B866EBF7AD02F52EB08EDA3191 /* FastttZoom.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		0A8430A4416E2FE93958E82A61564E1D /* UIViewController+FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCE8AEC4980C968DFD022190187C76A /* UIViewController+FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		19CA9E5BCEEC4361D734D41AFED13427 /* IFTTTDeviceOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1DEE1451C552E0D5E23D15B85F2004 /* IFTTTDeviceOrientation.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		1BFC68D58408962E7D9234BD87B67DCD /* FastttZoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A21C189742E3C86ABBDA3738358E56 /* FastttZoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C4E8DCAF8913A7E23D8956E8513476 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF659BA9E683D7F7A6AFB5BACE94A55 /* CoreMotion.framework */; };
+		3779AD75E467521FC56DDE381818E99E /* IFTTTDeviceOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 097B2A7B316311799038B8CEE95640BD /* IFTTTDeviceOrientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		378D95BC7E8BA53E27F383E9C8A1F9BC /* FastttCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F8FAE3DD44952DBFD84AA8DDC2DDA5 /* FastttCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F777DBBB1FC9643628F30EEFEA96496 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB1F5EED63191A4F3D1FE963499E5A1 /* AVFoundation.framework */; };
+		486DB687CD6C256C9151CB77F2968277 /* FastttFocus.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C7F12C2FF11CA914E9EEB0C203D65A8 /* FastttFocus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A5402C17D9100BB341E278F9994B18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE0FA0140A110717F0C0EE03B421A7C /* Foundation.framework */; };
+		497F7C2542EBFEA88F95678D94FF92F7 /* FastttCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 531AFC940F27D391D022E41BEE407B5C /* FastttCamera-dummy.m */; };
+		4F97153D226A03834687D5D2A321E595 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE0FA0140A110717F0C0EE03B421A7C /* Foundation.framework */; };
+		590EED481FAC0D7AB95E5ED2483D31AF /* FastttFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FC46AB81C60DD517010C97159DB649 /* FastttFocus.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		5B1480D87EEC6717270BBCDA805DD553 /* FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DEACEF308F791D567A4E9108A3B22D4B /* FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		6F839A4F17469A8A7FFA3BE04398F24C /* Pods-Jesuscam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D298FF8CCB81C93C611A452BFF7FEEE /* Pods-Jesuscam-dummy.m */; };
+		7548C5B23F2065261ADF8426700778B3 /* FastttCapturedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BFECDA670B3AC0D9DCD961AF484B3A /* FastttCapturedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FC34E595876C97B00D033748544163E /* FastttCameraTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2534A71ED04CF92EE1C0BBAF9864AEBF /* FastttCameraTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FCEFF7555A4CA4A9A668F8C36979E91 /* FastttCapturedImage+Process.m in Sources */ = {isa = PBXBuildFile; fileRef = AC48080257B873D52C3733B87A946553 /* FastttCapturedImage+Process.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		927B7E791107A4C2EDF9836665DE01F3 /* UIImage+FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCE373491DF434A025EFB81E7B4CCF3 /* UIImage+FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		988DC3A2C2A14900A34533F877CEBCD1 /* FastttCapturedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2F4913D255F411045C4B12B1121D1 /* FastttCapturedImage.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		9A90E561F7D3533AFA97355F90DF09F4 /* AVCaptureDevice+FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB451783404473D0CD85DC828C94FFC /* AVCaptureDevice+FastttCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAFF3884E77B9C48A72CF8331CBDB0C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0C543456C0C7860CF90FD136A78F9C /* UIKit.framework */; };
+		AD0856F232E40882C25943940EBC9784 /* AVCaptureDevice+FastttCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5FA29E0F66F3539DCD630F618186F9 /* AVCaptureDevice+FastttCamera.m */; settings = {COMPILER_FLAGS = "-fmodules"; }; };
+		B9D480F279976BF32CD176433BB3D63D /* FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = D5B740C2AA90519A0D1A22A5C6A99A54 /* FastttCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB39BAE82726FF7885207889CED98B2C /* UIViewController+FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = A16E0EA3DAC729FCBC8675461063B41F /* UIViewController+FastttCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFAAE582808D14C12FFB9FACD5FFD12 /* Pods-Jesuscam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA19F4BB4B59487EEB3BB9B634652EAE /* Pods-Jesuscam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE73C4E6FAB564D4908E4FCDA4A055A2 /* UIImage+FastttCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 056ABCA6475F9FBC02008A949A1B104B /* UIImage+FastttCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DADBA96B5414A0DCED9EA31B5BECF62D /* FastttCameraInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = D740E1C76D20A7A6741467565EED8A2C /* FastttCameraInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36DD7042369895570495697CED4155FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81379654DAFD8525C2EF3A2959BD378;
+			remoteInfo = FastttCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		056ABCA6475F9FBC02008A949A1B104B /* UIImage+FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+FastttCamera.h"; path = "FastttCamera/UIImage+FastttCamera.h"; sourceTree = "<group>"; };
+		079C505275970CC6926908D266F90A87 /* FastttCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastttCamera-prefix.pch"; sourceTree = "<group>"; };
+		097B2A7B316311799038B8CEE95640BD /* IFTTTDeviceOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IFTTTDeviceOrientation.h; path = FastttCamera/IFTTTDeviceOrientation.h; sourceTree = "<group>"; };
+		0D298FF8CCB81C93C611A452BFF7FEEE /* Pods-Jesuscam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Jesuscam-dummy.m"; sourceTree = "<group>"; };
+		108C21B866EBF7AD02F52EB08EDA3191 /* FastttZoom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttZoom.m; path = FastttCamera/FastttZoom.m; sourceTree = "<group>"; };
+		15FC46AB81C60DD517010C97159DB649 /* FastttFocus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttFocus.m; path = FastttCamera/FastttFocus.m; sourceTree = "<group>"; };
+		1771EC7B53B228BA4CC4E0BC61C09D9D /* Pods-Jesuscam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jesuscam.release.xcconfig"; sourceTree = "<group>"; };
+		1FEA0C31171C36A38B9B9E3043D4DB14 /* FastttCapturedImage+Process.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FastttCapturedImage+Process.h"; path = "FastttCamera/FastttCapturedImage+Process.h"; sourceTree = "<group>"; };
+		22BFECDA670B3AC0D9DCD961AF484B3A /* FastttCapturedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCapturedImage.h; path = FastttCamera/FastttCapturedImage.h; sourceTree = "<group>"; };
+		2534A71ED04CF92EE1C0BBAF9864AEBF /* FastttCameraTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCameraTypes.h; path = FastttCamera/FastttCameraTypes.h; sourceTree = "<group>"; };
+		288E0F4C1B156E10FFE8BE52AC043067 /* Pods-Jesuscam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Jesuscam.modulemap"; sourceTree = "<group>"; };
+		2B5FA29E0F66F3539DCD630F618186F9 /* AVCaptureDevice+FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AVCaptureDevice+FastttCamera.m"; path = "FastttCamera/AVCaptureDevice+FastttCamera.m"; sourceTree = "<group>"; };
+		3D1F6C2EF291335206560A8B2E070E0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A21C189742E3C86ABBDA3738358E56 /* FastttZoom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttZoom.h; path = FastttCamera/FastttZoom.h; sourceTree = "<group>"; };
+		4FB451783404473D0CD85DC828C94FFC /* AVCaptureDevice+FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AVCaptureDevice+FastttCamera.h"; path = "FastttCamera/AVCaptureDevice+FastttCamera.h"; sourceTree = "<group>"; };
+		531AFC940F27D391D022E41BEE407B5C /* FastttCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FastttCamera-dummy.m"; sourceTree = "<group>"; };
+		6C7F12C2FF11CA914E9EEB0C203D65A8 /* FastttFocus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttFocus.h; path = FastttCamera/FastttFocus.h; sourceTree = "<group>"; };
+		6DFF5E1E7831AC1BFEA9D53686BB3AAE /* Pods-Jesuscam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jesuscam.debug.xcconfig"; sourceTree = "<group>"; };
+		7BC049C8B31756F7F59C98413033582D /* Pods-Jesuscam-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Jesuscam-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E73EED114B52C4A35AA524C7891AF2B /* FastttCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FastttCamera.modulemap; sourceTree = "<group>"; };
+		7EA7ABBA33F24A63D6E919B7BD8AFC9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0C543456C0C7860CF90FD136A78F9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8ED2EF1A349F24F292D6EE9C7C099EBE /* Pods-Jesuscam-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Jesuscam-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AB1F5EED63191A4F3D1FE963499E5A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D1DEE1451C552E0D5E23D15B85F2004 /* IFTTTDeviceOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IFTTTDeviceOrientation.m; path = FastttCamera/IFTTTDeviceOrientation.m; sourceTree = "<group>"; };
+		9EE2F4913D255F411045C4B12B1121D1 /* FastttCapturedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttCapturedImage.m; path = FastttCamera/FastttCapturedImage.m; sourceTree = "<group>"; };
+		A16E0EA3DAC729FCBC8675461063B41F /* UIViewController+FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+FastttCamera.h"; path = "FastttCamera/UIViewController+FastttCamera.h"; sourceTree = "<group>"; };
+		A66D13F0A168AB33D6A7F2BCD0C79D7A /* Pods-Jesuscam-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jesuscam-resources.sh"; sourceTree = "<group>"; };
+		AC48080257B873D52C3733B87A946553 /* FastttCapturedImage+Process.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FastttCapturedImage+Process.m"; path = "FastttCamera/FastttCapturedImage+Process.m"; sourceTree = "<group>"; };
+		BBCE8AEC4980C968DFD022190187C76A /* UIViewController+FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+FastttCamera.m"; path = "FastttCamera/UIViewController+FastttCamera.m"; sourceTree = "<group>"; };
+		BFE0FA0140A110717F0C0EE03B421A7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C68BE6503887E6C5764881535327BCFC /* Pods_Jesuscam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Jesuscam.framework; path = "Pods-Jesuscam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF659BA9E683D7F7A6AFB5BACE94A55 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		D5B740C2AA90519A0D1A22A5C6A99A54 /* FastttCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCamera.h; path = FastttCamera/FastttCamera.h; sourceTree = "<group>"; };
+		D740E1C76D20A7A6741467565EED8A2C /* FastttCameraInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastttCameraInterface.h; path = FastttCamera/FastttCameraInterface.h; sourceTree = "<group>"; };
+		D7C3A87699E00063151D7D8BCC515309 /* FastttCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FastttCamera.framework; path = FastttCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBCE373491DF434A025EFB81E7B4CCF3 /* UIImage+FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FastttCamera.m"; path = "FastttCamera/UIImage+FastttCamera.m"; sourceTree = "<group>"; };
+		DEACEF308F791D567A4E9108A3B22D4B /* FastttCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastttCamera.m; path = FastttCamera/FastttCamera.m; sourceTree = "<group>"; };
+		E5996504E0AD28CB85C095C3D3FEC1F8 /* FastttCamera.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FastttCamera.xcconfig; sourceTree = "<group>"; };
+		E6D6691C19291C2EFE2AFF02EFD51109 /* Pods-Jesuscam-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jesuscam-frameworks.sh"; sourceTree = "<group>"; };
+		EA19F4BB4B59487EEB3BB9B634652EAE /* Pods-Jesuscam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Jesuscam-umbrella.h"; sourceTree = "<group>"; };
+		F3F8FAE3DD44952DBFD84AA8DDC2DDA5 /* FastttCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastttCamera-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21993B53EED66204B6D2BF8614B5D4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F97153D226A03834687D5D2A321E595 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73825CDC9DF33BCD9E74C9E2088338A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F777DBBB1FC9643628F30EEFEA96496 /* AVFoundation.framework in Frameworks */,
+				29C4E8DCAF8913A7E23D8956E8513476 /* CoreMotion.framework in Frameworks */,
+				48A5402C17D9100BB341E278F9994B18 /* Foundation.framework in Frameworks */,
+				AAFF3884E77B9C48A72CF8331CBDB0C8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02D380D0880263DEB2B6DDFD4686B0A9 /* Pods-Jesuscam */ = {
+			isa = PBXGroup;
+			children = (
+				3D1F6C2EF291335206560A8B2E070E0B /* Info.plist */,
+				288E0F4C1B156E10FFE8BE52AC043067 /* Pods-Jesuscam.modulemap */,
+				7BC049C8B31756F7F59C98413033582D /* Pods-Jesuscam-acknowledgements.markdown */,
+				8ED2EF1A349F24F292D6EE9C7C099EBE /* Pods-Jesuscam-acknowledgements.plist */,
+				0D298FF8CCB81C93C611A452BFF7FEEE /* Pods-Jesuscam-dummy.m */,
+				E6D6691C19291C2EFE2AFF02EFD51109 /* Pods-Jesuscam-frameworks.sh */,
+				A66D13F0A168AB33D6A7F2BCD0C79D7A /* Pods-Jesuscam-resources.sh */,
+				EA19F4BB4B59487EEB3BB9B634652EAE /* Pods-Jesuscam-umbrella.h */,
+				6DFF5E1E7831AC1BFEA9D53686BB3AAE /* Pods-Jesuscam.debug.xcconfig */,
+				1771EC7B53B228BA4CC4E0BC61C09D9D /* Pods-Jesuscam.release.xcconfig */,
+			);
+			name = "Pods-Jesuscam";
+			path = "Target Support Files/Pods-Jesuscam";
+			sourceTree = "<group>";
+		};
+		0C6005A6383B4D1C36CD1C0FB20F2BF6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02D380D0880263DEB2B6DDFD4686B0A9 /* Pods-Jesuscam */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5497CB07B119479B362B67A9DBB183F9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4269E99E31F10CDB86FE62A736FA57E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B67E72DD84C512343CD912033510D5 /* FastttCamera */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4354D64FCD7E7EFBD30F5E681A0BFD55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7C3A87699E00063151D7D8BCC515309 /* FastttCamera.framework */,
+				C68BE6503887E6C5764881535327BCFC /* Pods_Jesuscam.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5497CB07B119479B362B67A9DBB183F9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AB1F5EED63191A4F3D1FE963499E5A1 /* AVFoundation.framework */,
+				CEF659BA9E683D7F7A6AFB5BACE94A55 /* CoreMotion.framework */,
+				BFE0FA0140A110717F0C0EE03B421A7C /* Foundation.framework */,
+				8C0C543456C0C7860CF90FD136A78F9C /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		63B67E72DD84C512343CD912033510D5 /* FastttCamera */ = {
+			isa = PBXGroup;
+			children = (
+				98B39364B68E84940F69B4313D72F25B /* Default */,
+				C19DE35329C6C2F44B8BE13F9B7F9E41 /* Support Files */,
+			);
+			name = FastttCamera;
+			path = FastttCamera;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				4269E99E31F10CDB86FE62A736FA57E0 /* Pods */,
+				4354D64FCD7E7EFBD30F5E681A0BFD55 /* Products */,
+				0C6005A6383B4D1C36CD1C0FB20F2BF6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		98B39364B68E84940F69B4313D72F25B /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				4FB451783404473D0CD85DC828C94FFC /* AVCaptureDevice+FastttCamera.h */,
+				2B5FA29E0F66F3539DCD630F618186F9 /* AVCaptureDevice+FastttCamera.m */,
+				D5B740C2AA90519A0D1A22A5C6A99A54 /* FastttCamera.h */,
+				DEACEF308F791D567A4E9108A3B22D4B /* FastttCamera.m */,
+				D740E1C76D20A7A6741467565EED8A2C /* FastttCameraInterface.h */,
+				2534A71ED04CF92EE1C0BBAF9864AEBF /* FastttCameraTypes.h */,
+				22BFECDA670B3AC0D9DCD961AF484B3A /* FastttCapturedImage.h */,
+				9EE2F4913D255F411045C4B12B1121D1 /* FastttCapturedImage.m */,
+				1FEA0C31171C36A38B9B9E3043D4DB14 /* FastttCapturedImage+Process.h */,
+				AC48080257B873D52C3733B87A946553 /* FastttCapturedImage+Process.m */,
+				6C7F12C2FF11CA914E9EEB0C203D65A8 /* FastttFocus.h */,
+				15FC46AB81C60DD517010C97159DB649 /* FastttFocus.m */,
+				46A21C189742E3C86ABBDA3738358E56 /* FastttZoom.h */,
+				108C21B866EBF7AD02F52EB08EDA3191 /* FastttZoom.m */,
+				097B2A7B316311799038B8CEE95640BD /* IFTTTDeviceOrientation.h */,
+				9D1DEE1451C552E0D5E23D15B85F2004 /* IFTTTDeviceOrientation.m */,
+				056ABCA6475F9FBC02008A949A1B104B /* UIImage+FastttCamera.h */,
+				DBCE373491DF434A025EFB81E7B4CCF3 /* UIImage+FastttCamera.m */,
+				A16E0EA3DAC729FCBC8675461063B41F /* UIViewController+FastttCamera.h */,
+				BBCE8AEC4980C968DFD022190187C76A /* UIViewController+FastttCamera.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		C19DE35329C6C2F44B8BE13F9B7F9E41 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E73EED114B52C4A35AA524C7891AF2B /* FastttCamera.modulemap */,
+				E5996504E0AD28CB85C095C3D3FEC1F8 /* FastttCamera.xcconfig */,
+				531AFC940F27D391D022E41BEE407B5C /* FastttCamera-dummy.m */,
+				079C505275970CC6926908D266F90A87 /* FastttCamera-prefix.pch */,
+				F3F8FAE3DD44952DBFD84AA8DDC2DDA5 /* FastttCamera-umbrella.h */,
+				7EA7ABBA33F24A63D6E919B7BD8AFC9E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FastttCamera";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		013746FDA94FE7FB75DC4FEB6CE6AFE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A90E561F7D3533AFA97355F90DF09F4 /* AVCaptureDevice+FastttCamera.h in Headers */,
+				378D95BC7E8BA53E27F383E9C8A1F9BC /* FastttCamera-umbrella.h in Headers */,
+				B9D480F279976BF32CD176433BB3D63D /* FastttCamera.h in Headers */,
+				DADBA96B5414A0DCED9EA31B5BECF62D /* FastttCameraInterface.h in Headers */,
+				8FC34E595876C97B00D033748544163E /* FastttCameraTypes.h in Headers */,
+				00843E21C283A2894A65B8F06FAE4230 /* FastttCapturedImage+Process.h in Headers */,
+				7548C5B23F2065261ADF8426700778B3 /* FastttCapturedImage.h in Headers */,
+				486DB687CD6C256C9151CB77F2968277 /* FastttFocus.h in Headers */,
+				1BFC68D58408962E7D9234BD87B67DCD /* FastttZoom.h in Headers */,
+				3779AD75E467521FC56DDE381818E99E /* IFTTTDeviceOrientation.h in Headers */,
+				CE73C4E6FAB564D4908E4FCDA4A055A2 /* UIImage+FastttCamera.h in Headers */,
+				BB39BAE82726FF7885207889CED98B2C /* UIViewController+FastttCamera.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7165BF65BD2CF452B2CBC01A6483E1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFAAE582808D14C12FFB9FACD5FFD12 /* Pods-Jesuscam-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6BB25AC8BE43EC0E074EA7A7C12E6DE9 /* Pods-Jesuscam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7940FB93F28A69882E3EF3CB1EFA5F /* Build configuration list for PBXNativeTarget "Pods-Jesuscam" */;
+			buildPhases = (
+				8BE3306C941ED48B12439FF5B264D4F5 /* Sources */,
+				21993B53EED66204B6D2BF8614B5D4BC /* Frameworks */,
+				B7165BF65BD2CF452B2CBC01A6483E1F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B787EB7B155C16DC06B0020CE0F04B1D /* PBXTargetDependency */,
+			);
+			name = "Pods-Jesuscam";
+			productName = "Pods-Jesuscam";
+			productReference = C68BE6503887E6C5764881535327BCFC /* Pods_Jesuscam.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D81379654DAFD8525C2EF3A2959BD378 /* FastttCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34A469AA60C3FC5BFF5E87AC32C9E22 /* Build configuration list for PBXNativeTarget "FastttCamera" */;
+			buildPhases = (
+				5DC26A6330D6E3B573C6D321B1E0EB13 /* Sources */,
+				73825CDC9DF33BCD9E74C9E2088338A9 /* Frameworks */,
+				013746FDA94FE7FB75DC4FEB6CE6AFE6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastttCamera;
+			productName = FastttCamera;
+			productReference = D7C3A87699E00063151D7D8BCC515309 /* FastttCamera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4354D64FCD7E7EFBD30F5E681A0BFD55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D81379654DAFD8525C2EF3A2959BD378 /* FastttCamera */,
+				6BB25AC8BE43EC0E074EA7A7C12E6DE9 /* Pods-Jesuscam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DC26A6330D6E3B573C6D321B1E0EB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0856F232E40882C25943940EBC9784 /* AVCaptureDevice+FastttCamera.m in Sources */,
+				497F7C2542EBFEA88F95678D94FF92F7 /* FastttCamera-dummy.m in Sources */,
+				5B1480D87EEC6717270BBCDA805DD553 /* FastttCamera.m in Sources */,
+				8FCEFF7555A4CA4A9A668F8C36979E91 /* FastttCapturedImage+Process.m in Sources */,
+				988DC3A2C2A14900A34533F877CEBCD1 /* FastttCapturedImage.m in Sources */,
+				590EED481FAC0D7AB95E5ED2483D31AF /* FastttFocus.m in Sources */,
+				0346B0F4ECF128AD63B645231F3F5004 /* FastttZoom.m in Sources */,
+				19CA9E5BCEEC4361D734D41AFED13427 /* IFTTTDeviceOrientation.m in Sources */,
+				927B7E791107A4C2EDF9836665DE01F3 /* UIImage+FastttCamera.m in Sources */,
+				0A8430A4416E2FE93958E82A61564E1D /* UIViewController+FastttCamera.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE3306C941ED48B12439FF5B264D4F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F839A4F17469A8A7FFA3BE04398F24C /* Pods-Jesuscam-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B787EB7B155C16DC06B0020CE0F04B1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FastttCamera;
+			target = D81379654DAFD8525C2EF3A2959BD378 /* FastttCamera */;
+			targetProxy = 36DD7042369895570495697CED4155FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25356C0EFF57075F60CD7814AFDA1837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1771EC7B53B228BA4CC4E0BC61C09D9D /* Pods-Jesuscam.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Jesuscam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Jesuscam/Pods-Jesuscam.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Jesuscam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AE0945CAE8D59433EAAF8C97911A839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5996504E0AD28CB85C095C3D3FEC1F8 /* FastttCamera.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FastttCamera/FastttCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FastttCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FastttCamera/FastttCamera.modulemap";
+				PRODUCT_NAME = FastttCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A1598698986A2B181EC1D4F62608D51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DFF5E1E7831AC1BFEA9D53686BB3AAE /* Pods-Jesuscam.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Jesuscam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Jesuscam/Pods-Jesuscam.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Jesuscam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F972D6367853C13F0E85A650F5D494B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5996504E0AD28CB85C095C3D3FEC1F8 /* FastttCamera.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FastttCamera/FastttCamera-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FastttCamera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FastttCamera/FastttCamera.modulemap";
+				PRODUCT_NAME = FastttCamera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7940FB93F28A69882E3EF3CB1EFA5F /* Build configuration list for PBXNativeTarget "Pods-Jesuscam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1598698986A2B181EC1D4F62608D51B /* Debug */,
+				25356C0EFF57075F60CD7814AFDA1837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34A469AA60C3FC5BFF5E87AC32C9E22 /* Build configuration list for PBXNativeTarget "FastttCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE0945CAE8D59433EAAF8C97911A839 /* Debug */,
+				F972D6367853C13F0E85A650F5D494B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
