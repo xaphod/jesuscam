@@ -13,9 +13,13 @@ import Photos
 
 class MainViewController: UIViewController {
     var fastttCamera = FastttCamera()
+    var lastPhoto: UIImage?
 
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var takePhotoButton: UIButton!
+    @IBOutlet weak var lastPhotoButton: UIButton!
+    @IBOutlet weak var lastPhotoImageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +66,10 @@ class MainViewController: UIViewController {
         self.fastttAddChildViewController(self.fastttCamera, in: self.cameraView)
     }
     
+    @IBAction func lastPhotoButtonPressed(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string:"photos-redirect://")!)
+    }
+    
     @IBAction func takePhotoPressed(_ sender: Any) {
         self.fastttCamera.takePicture(nil)
     }
@@ -85,6 +93,9 @@ class MainViewController: UIViewController {
             assert(false, "ERROR")
             return
         }
+        self.lastPhoto = image
+        assert(Thread.current.isMainThread)
+        self.updateLastPhotoImage()
         
         PHPhotoLibrary.shared().performChanges({
             let _ = PHAssetChangeRequest.creationRequestForAsset(from: image)
@@ -98,6 +109,12 @@ class MainViewController: UIViewController {
                 }
             }
         })
+    }
+    
+    func updateLastPhotoImage() {
+        guard let image = self.lastPhoto else { return }
+        let resizedImage = image.cropImage(toFill: self.lastPhotoImageView.bounds.size.atScreenScale(), opaque: true, scale: 0)
+        self.lastPhotoImageView.image = resizedImage
     }
 }
 

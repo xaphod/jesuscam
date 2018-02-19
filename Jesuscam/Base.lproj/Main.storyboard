@@ -23,6 +23,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jesus-1000h" translatesAutoresizingMaskIntoConstraints="NO" id="EPu-CT-amG">
+                                <rect key="frame" x="94" y="166" width="187.5" height="333.5"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knw-fQ-MIN">
                                 <rect key="frame" x="157" y="526" width="61" height="61"/>
                                 <state key="normal" image="cam-button"/>
@@ -30,14 +33,57 @@
                                     <action selector="takePhotoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjX-bf-GzW"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jesus-1000h" translatesAutoresizingMaskIntoConstraints="NO" id="EPu-CT-amG">
-                                <rect key="frame" x="94" y="166.5" width="187.5" height="333.5"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFR-Ik-54V">
+                                <rect key="frame" x="0.0" y="531.5" width="157" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-VK-AKu">
+                                        <rect key="frame" x="53" y="0.0" width="50" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0w-e8-QM7">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkd-Nc-MJA">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <connections>
+                                                    <action selector="lastPhotoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2QJ-f9-xJn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Qkd-Nc-MJA" firstAttribute="leading" secondItem="i2F-VK-AKu" secondAttribute="leading" id="2NM-DG-C67"/>
+                                            <constraint firstAttribute="width" constant="50" id="49t-Bm-f4s"/>
+                                            <constraint firstAttribute="bottom" secondItem="U0w-e8-QM7" secondAttribute="bottom" id="74c-l8-VYZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="U0w-e8-QM7" secondAttribute="trailing" id="E6S-WM-bdL"/>
+                                            <constraint firstItem="U0w-e8-QM7" firstAttribute="leading" secondItem="i2F-VK-AKu" secondAttribute="leading" id="VCR-tW-sB4"/>
+                                            <constraint firstItem="Qkd-Nc-MJA" firstAttribute="top" secondItem="i2F-VK-AKu" secondAttribute="top" id="XlG-Ck-Sne"/>
+                                            <constraint firstItem="U0w-e8-QM7" firstAttribute="top" secondItem="i2F-VK-AKu" secondAttribute="top" id="iaA-nI-MtF"/>
+                                            <constraint firstAttribute="height" constant="50" id="il6-qh-DO0"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qkd-Nc-MJA" secondAttribute="bottom" id="l2F-S2-Qa7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qkd-Nc-MJA" secondAttribute="trailing" id="mb9-MY-3CQ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="i2F-VK-AKu" firstAttribute="centerX" secondItem="eFR-Ik-54V" secondAttribute="centerX" id="6lX-ca-5Nm"/>
+                                    <constraint firstAttribute="bottom" secondItem="i2F-VK-AKu" secondAttribute="bottom" id="cr0-Fj-atw"/>
+                                    <constraint firstItem="i2F-VK-AKu" firstAttribute="top" secondItem="eFR-Ik-54V" secondAttribute="top" id="gkC-4y-gg8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ET1-wA-F8O" secondAttribute="trailing" id="0v9-TV-yX1"/>
+                            <constraint firstItem="eFR-Ik-54V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3MK-VE-bCS"/>
                             <constraint firstItem="ET1-wA-F8O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Asd-kI-WH8"/>
+                            <constraint firstItem="Knw-fQ-MIN" firstAttribute="leading" secondItem="eFR-Ik-54V" secondAttribute="trailing" id="FX3-47-hME"/>
                             <constraint firstItem="EPu-CT-amG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IwZ-9I-sgU"/>
                             <constraint firstItem="EPu-CT-amG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="LID-G7-hCQ"/>
                             <constraint firstItem="EPu-CT-amG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="NMy-db-GCy"/>
@@ -46,11 +92,14 @@
                             <constraint firstItem="Knw-fQ-MIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czp-lW-RgU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ET1-wA-F8O" secondAttribute="bottom" id="w2Z-R0-C9N"/>
                             <constraint firstItem="EPu-CT-amG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z5c-rU-xD5"/>
+                            <constraint firstItem="eFR-Ik-54V" firstAttribute="centerY" secondItem="Knw-fQ-MIN" secondAttribute="centerY" id="zl8-Mg-iVb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="ET1-wA-F8O" id="gQS-R5-j6X"/>
+                        <outlet property="lastPhotoButton" destination="Qkd-Nc-MJA" id="ssx-pv-x8F"/>
+                        <outlet property="lastPhotoImageView" destination="U0w-e8-QM7" id="Z5i-vp-66h"/>
                         <outlet property="takePhotoButton" destination="Knw-fQ-MIN" id="7lE-kD-eRw"/>
                     </connections>
                 </viewController>
