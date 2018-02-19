@@ -36,7 +36,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFR-Ik-54V">
                                 <rect key="frame" x="0.0" y="531.5" width="157" height="50"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-VK-AKu">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2F-VK-AKu">
                                         <rect key="frame" x="53" y="0.0" width="50" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0w-e8-QM7">
@@ -95,15 +95,105 @@
                         <outlet property="lastPhotoButton" destination="Qkd-Nc-MJA" id="ssx-pv-x8F"/>
                         <outlet property="lastPhotoImageView" destination="U0w-e8-QM7" id="Z5i-vp-66h"/>
                         <outlet property="takePhotoButton" destination="Knw-fQ-MIN" id="7lE-kD-eRw"/>
+                        <segue destination="iy1-jV-e9N" kind="presentation" identifier="segueToPreview" id="cZe-Bb-c3V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="dFN-mP-lfH">
+            <objects>
+                <viewController id="iy1-jV-e9N" customClass="PreviewViewController" customModule="Jesuscam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTn-OG-GlL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42t-nz-krm">
+                                <rect key="frame" x="0.0" y="625.5" width="375" height="41.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="S8R-cD-IED">
+                                        <rect key="frame" x="0.0" y="14.5" width="375" height="14"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GG2-TK-nzQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="iy1-jV-e9N" eventType="touchUpInside" id="Fw6-sy-Oup"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GG2-TK-nzQ" secondAttribute="trailing" id="0YN-Nq-9um"/>
+                                    <constraint firstItem="S8R-cD-IED" firstAttribute="height" secondItem="42t-nz-krm" secondAttribute="height" multiplier="0.33" id="2jz-1K-TVM"/>
+                                    <constraint firstItem="S8R-cD-IED" firstAttribute="leading" secondItem="42t-nz-krm" secondAttribute="leading" id="5E2-8T-JO3"/>
+                                    <constraint firstAttribute="bottom" secondItem="GG2-TK-nzQ" secondAttribute="bottom" id="9KD-1A-p2F"/>
+                                    <constraint firstItem="GG2-TK-nzQ" firstAttribute="leading" secondItem="42t-nz-krm" secondAttribute="leading" id="MC1-HB-nyU"/>
+                                    <constraint firstItem="GG2-TK-nzQ" firstAttribute="top" secondItem="42t-nz-krm" secondAttribute="top" id="fuZ-T7-hOn"/>
+                                    <constraint firstAttribute="trailing" secondItem="S8R-cD-IED" secondAttribute="trailing" id="nKA-EF-DzG"/>
+                                    <constraint firstItem="S8R-cD-IED" firstAttribute="centerY" secondItem="42t-nz-krm" secondAttribute="centerY" id="s8Y-Lj-dIQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzQ-HW-VAj">
+                                <rect key="frame" x="0.0" y="541.5" width="375" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="4gp-gX-o1z">
+                                        <rect key="frame" x="0.0" y="27" width="375" height="26"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ion-g7-mlN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="iy1-jV-e9N" eventType="touchUpInside" id="bd3-kq-Tav"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ion-g7-mlN" secondAttribute="bottom" id="3Lk-DM-KkZ"/>
+                                    <constraint firstItem="ion-g7-mlN" firstAttribute="leading" secondItem="zzQ-HW-VAj" secondAttribute="leading" id="5GJ-pL-dJO"/>
+                                    <constraint firstItem="4gp-gX-o1z" firstAttribute="leading" secondItem="zzQ-HW-VAj" secondAttribute="leading" id="Phh-ib-svn"/>
+                                    <constraint firstItem="ion-g7-mlN" firstAttribute="top" secondItem="zzQ-HW-VAj" secondAttribute="top" id="SH2-Sd-zIG"/>
+                                    <constraint firstAttribute="trailing" secondItem="4gp-gX-o1z" secondAttribute="trailing" id="VfI-fz-3jd"/>
+                                    <constraint firstItem="4gp-gX-o1z" firstAttribute="centerY" secondItem="zzQ-HW-VAj" secondAttribute="centerY" id="YmF-kK-qD4"/>
+                                    <constraint firstItem="4gp-gX-o1z" firstAttribute="height" secondItem="zzQ-HW-VAj" secondAttribute="height" multiplier="0.33" id="bcL-AK-RXn"/>
+                                    <constraint firstAttribute="trailing" secondItem="ion-g7-mlN" secondAttribute="trailing" id="xpm-Qj-D4F"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-Lc-bb5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="541"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zzQ-HW-VAj" firstAttribute="leading" secondItem="0BP-yU-Doh" secondAttribute="leading" id="87L-1P-m8g"/>
+                            <constraint firstItem="zzQ-HW-VAj" firstAttribute="trailing" secondItem="0BP-yU-Doh" secondAttribute="trailing" id="CX6-3k-skr"/>
+                            <constraint firstItem="Sh7-Lc-bb5" firstAttribute="leading" secondItem="0BP-yU-Doh" secondAttribute="leading" id="CjN-SG-HAq"/>
+                            <constraint firstItem="42t-nz-krm" firstAttribute="top" secondItem="zzQ-HW-VAj" secondAttribute="bottom" constant="4" id="Ixe-rF-rpE"/>
+                            <constraint firstItem="0BP-yU-Doh" firstAttribute="trailing" secondItem="Sh7-Lc-bb5" secondAttribute="trailing" id="K8H-iW-LXr"/>
+                            <constraint firstItem="Sh7-Lc-bb5" firstAttribute="top" secondItem="vTn-OG-GlL" secondAttribute="top" id="KgQ-3A-i5R"/>
+                            <constraint firstItem="0BP-yU-Doh" firstAttribute="trailing" secondItem="42t-nz-krm" secondAttribute="trailing" id="Tk1-AQ-xxa"/>
+                            <constraint firstItem="zzQ-HW-VAj" firstAttribute="top" secondItem="Sh7-Lc-bb5" secondAttribute="bottom" id="ZX3-Is-uk6"/>
+                            <constraint firstItem="0BP-yU-Doh" firstAttribute="bottom" secondItem="42t-nz-krm" secondAttribute="bottom" id="eA0-m0-Xec"/>
+                            <constraint firstItem="42t-nz-krm" firstAttribute="height" secondItem="vTn-OG-GlL" secondAttribute="height" multiplier="0.0625" id="gRu-OZ-hBW"/>
+                            <constraint firstItem="zzQ-HW-VAj" firstAttribute="height" secondItem="vTn-OG-GlL" secondAttribute="height" multiplier="0.12" id="sC4-Lf-B9z"/>
+                            <constraint firstItem="42t-nz-krm" firstAttribute="leading" secondItem="0BP-yU-Doh" secondAttribute="leading" id="xD8-NN-1Gi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0BP-yU-Doh"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Sh7-Lc-bb5" id="dwy-TU-vnK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3D-9B-Cnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.79999999999995" y="35.532233883058474"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cam-button" width="61" height="61"/>
+        <image name="cancel" width="212" height="40"/>
         <image name="jesus-1000h" width="707" height="1000"/>
+        <image name="share" width="188" height="40"/>
     </resources>
 </document>

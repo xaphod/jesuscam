@@ -13,13 +13,16 @@ import Photos
 
 class MainViewController: UIViewController {
     var fastttCamera = FastttCamera()
-    var lastPhoto: UIImage?
+    var lastPhoto: UIImage? {
+        didSet {
+            self.lastPhotoImageView.superview!.isHidden = self.lastPhoto == nil
+        }
+    }
 
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var takePhotoButton: UIButton!
     @IBOutlet weak var lastPhotoButton: UIButton!
     @IBOutlet weak var lastPhotoImageView: UIImageView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,9 +61,15 @@ class MainViewController: UIViewController {
                         return
                     }
                     self.setupCamera()
+                    self.takePhotoButton.isEnabled = true
                 }
             }
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.fastttRemoveChildViewController(self.fastttCamera)
     }
     
     func setupCamera() {
@@ -76,6 +85,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func takePhotoPressed(_ sender: Any) {
+        self.takePhotoButton.isEnabled = false
         self.fastttCamera.takePicture(nil)
     }
     
@@ -96,6 +106,7 @@ class MainViewController: UIViewController {
     func saveImageToCameraRoll(_ image: UIImage?) {
         guard let image = image else {
             assert(false, "ERROR")
+            self.takePhotoButton.isEnabled = true
             return
         }
         self.lastPhoto = image
@@ -105,12 +116,12 @@ class MainViewController: UIViewController {
         PHPhotoLibrary.shared().performChanges({
             let _ = PHAssetChangeRequest.creationRequestForAsset(from: image)
         }, completionHandler: { (success, error) in
-            print("Success: \(success)")
+            NSLog("Success: \(success), error: \(error)")
             DispatchQueue.main.async {
                 if success {
-                    let alert = UIAlertController.init(title: "Photo saved!", message: "The photo has been saved to your Camera Roll.", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
+                    self.performSegue(withIdentifier: "segueToPreview", sender: nil)
+                } else {
+                    self.takePhotoButton.isEnabled = true
                 }
             }
         })
@@ -121,12 +132,20 @@ class MainViewController: UIViewController {
         let resizedImage = image.cropImage(toFill: self.lastPhotoImageView.bounds.size.atScreenScale(), opaque: true, scale: 0)
         self.lastPhotoImageView.image = resizedImage
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "segueToPreview", let previewVC = segue.destination as? PreviewViewController {
+            previewVC.image = self.lastPhoto
+        }
+    }
 }
 
 extension MainViewController : FastttCameraDelegate {
     func cameraController(_ cameraController: FastttCameraInterface!, didFinishNormalizing capturedImage: FastttCapturedImage!) {
         guard let image = capturedImage.fullImage else {
             assert(false, "ERROR")
+            self.takePhotoButton.isEnabled = true
             return
         }
         saveImageToCameraRoll(jesusize(image))
