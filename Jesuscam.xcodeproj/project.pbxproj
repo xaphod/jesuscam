@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		222420BB203B1A090026EEF2 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 222420BA203B1A090026EEF2 /* UIImage+Utils.m */; };
-		222420C1203B1DA30026EEF2 /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 222420C0203B1DA30026EEF2 /* CALayer+XibConfiguration.m */; };
 		223B71F61F8D180200A74F9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B71F51F8D180200A74F9D /* AppDelegate.swift */; };
 		223B71F81F8D180200A74F9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B71F71F8D180200A74F9D /* MainViewController.swift */; };
 		223B71FB1F8D180200A74F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223B71F91F8D180200A74F9D /* Main.storyboard */; };
@@ -23,8 +22,6 @@
 		222420B8203B1A080026EEF2 /* Jesuscam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jesuscam-Bridging-Header.h"; sourceTree = "<group>"; };
 		222420B9203B1A090026EEF2 /* UIImage+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
 		222420BA203B1A090026EEF2 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
-		222420BF203B1DA30026EEF2 /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
-		222420C0203B1DA30026EEF2 /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
 		223B71F21F8D180200A74F9D /* Jesuscam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jesuscam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223B71F51F8D180200A74F9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223B71F71F8D180200A74F9D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -72,8 +69,6 @@
 			children = (
 				223B71F51F8D180200A74F9D /* AppDelegate.swift */,
 				223B71F71F8D180200A74F9D /* MainViewController.swift */,
-				222420BF203B1DA30026EEF2 /* CALayer+XibConfiguration.h */,
-				222420C0203B1DA30026EEF2 /* CALayer+XibConfiguration.m */,
 				222420B9203B1A090026EEF2 /* UIImage+Utils.h */,
 				222420BA203B1A090026EEF2 /* UIImage+Utils.m */,
 				223B71F91F8D180200A74F9D /* Main.storyboard */,
@@ -234,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E56B3C203B222A00F30890 /* Utils.swift in Sources */,
-				222420C1203B1DA30026EEF2 /* CALayer+XibConfiguration.m in Sources */,
 				222420BB203B1A090026EEF2 /* UIImage+Utils.m in Sources */,
 				223B71F81F8D180200A74F9D /* MainViewController.swift in Sources */,
 				223B71F61F8D180200A74F9D /* AppDelegate.swift in Sources */,

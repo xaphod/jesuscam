@@ -23,6 +23,11 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let view = self.lastPhotoImageView.superview!
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 4.0
+        view.layer.borderColor = UIColor.black.cgColor
+        view.layer.borderWidth = 2.0
     }
     
     override var prefersStatusBarHidden: Bool {

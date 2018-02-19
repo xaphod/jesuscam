@@ -62,12 +62,6 @@
                                             <constraint firstAttribute="bottom" secondItem="Qkd-Nc-MJA" secondAttribute="bottom" id="l2F-S2-Qa7"/>
                                             <constraint firstAttribute="trailing" secondItem="Qkd-Nc-MJA" secondAttribute="trailing" id="mb9-MY-3CQ"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
