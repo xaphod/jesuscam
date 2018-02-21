@@ -19,13 +19,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Takes photos with your camera</string>
+	<string>This app allows you to take photos with your camera, for sharing as part of #Jesus2018</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Saves photos to your Camera Roll</string>
+	<string>This app saves the photos that you take to your photo library.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

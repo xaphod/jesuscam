@@ -13,6 +13,7 @@ import Photos
 
 class MainViewController: UIViewController {
     var fastttCamera = FastttCamera()
+    var fastttCameraDevice = FastttCameraDevice.rear
     var lastPhoto: UIImage? {
         didSet {
             self.lastPhotoImageView.superview!.isHidden = self.lastPhoto == nil
@@ -77,6 +78,8 @@ class MainViewController: UIViewController {
         fastttCamera.cropsImageToVisibleAspectRatio = false
         fastttCamera.scalesImage = false
         fastttCamera.normalizesImageOrientations = true
+        fastttCamera.cameraDevice = self.fastttCameraDevice
+        fastttCamera.mirrorsVideo = self.fastttCameraDevice == .front
         self.fastttAddChildViewController(self.fastttCamera, in: self.cameraView)
     }
     
@@ -138,6 +141,13 @@ class MainViewController: UIViewController {
         if segue.identifier == "segueToPreview", let previewVC = segue.destination as? PreviewViewController {
             previewVC.image = self.lastPhoto
         }
+    }
+    
+    @IBAction func camSwitchPressed(_ sender: Any) {
+        self.fastttCamera.stopRunning()
+        self.fastttRemoveChildViewController(self.fastttCamera)
+        self.fastttCameraDevice = (self.fastttCameraDevice == .front) ? .rear : .front
+        self.setupCamera()
     }
 }
 
